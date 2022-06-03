@@ -14,7 +14,7 @@ function Purchase({book}) {
     // Get The Price of MATIC
 
     const options = {
-      address: "0x7D1AfA7B718fb893dB30A3aBc0Cfc608AaCfeBB0",
+      address: process.env.REACT_APP_MORALIS_POLYGON,
       chain: "eth"
     };
     const price = await Moralis.Web3API.token.getTokenPrice(options);
@@ -25,7 +25,7 @@ function Purchase({book}) {
     const options1 = {
       type: "native", 
       amount: Moralis.Units.ETH(priceMatic), 
-      receiver: "xxxxx"
+      receiver: process.env.REACT_APP_MORALIS_RECIPIENT
     }
     let result = await Moralis.transfer(options1)
 

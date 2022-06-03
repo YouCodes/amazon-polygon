@@ -3,12 +3,13 @@ import Spidey2 from "./images/spiderman2.png";
 import Spidey3 from "./images/spiderman3.png";
 import Spidey4 from "./images/spiderman4.png";
 import Dictionary from "./images/oxford.png";
+import shoe from "./images/AngryShoe.jpg"
 
 export const books = {
   Comics: [
     {
       name: "The Amazing Spiderman By Nick Spencer Vol. 1: Back To Basics (MARVEL ORIGINAL COMIC)",
-      price: 1.99,
+      price: 0.01,
       rating: 4,
       image: Spidey1,
       about:
@@ -16,7 +17,7 @@ export const books = {
     },
     {
       name: "The Amazing Spiderman By Nick Spencer Vol. 2: Friends And Foes (MARVEL ORIGINAL COMIC)",
-      price: 19.99,
+      price: 0.20,
       rating: 5,
       image: Spidey2,
       about:
@@ -53,4 +54,14 @@ export const books = {
   Fantasy: [],
   Horror: [],
   Adventure: [],
+  Shoes: [
+    {
+      name: "Airhead 590x",
+      price: 65.69,
+      rating: 5,
+      image: shoe,
+      about:
+        "The most comfortable shoes ever, you won't even realize you are wearing them"
+    },
+  ],
 };

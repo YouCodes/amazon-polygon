@@ -24,7 +24,7 @@ function Results({category, rating, priceMin, priceMax}) {
             Ships to Your Location
           </p>
           <Link to="/product" state={e} className="login">
-          Got to Product Page
+          Go to Product Page
         </Link>
         </div>
       </div>

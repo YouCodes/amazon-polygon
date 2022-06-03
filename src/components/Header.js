@@ -8,7 +8,7 @@ import BookStore from "../images/bookstore.png";
 import {ShoppingCartOutlined, MenuOutlined} from "@ant-design/icons";
 
 const {Search } = Input;
-const categories = ["Comics", "Dictionaries", "Novels", "Fantasy", "Horror", "Adventure"];
+const categories = ["Comics", "Dictionaries", "Novels", "Fantasy", "Horror", "Adventure", "Shoes"];
 
 const Header = () => {
   const { authenticate, account } = useMoralis();
@@ -19,7 +19,8 @@ const Header = () => {
         extra={[
           <>
           <a href="/"><img src={Amazon} className="logo"></img></a>
-          <img src={BookStore} className="logo"></img>
+          <span className="space_out">Web 3.0</span>
+          {/* <img src={BookStore} className="logo"></img> */}
           <Search
               placeholder="Find A Product"
               enterButton
@@ -30,7 +31,7 @@ const Header = () => {
          key="1" 
          type="primary" 
          onClick={() => authenticate()}>
-          {account ? <span>{account.slice(0,5)}...</span> : <span>login</span>}
+          {account ? <span>{account.slice(0,10)}...{account.slice(12,15)}</span> : <span>Connect Metamask</span>}
           </Button>
           <Space size={"large"}>
               

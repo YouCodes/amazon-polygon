@@ -20,7 +20,7 @@ const Categories = () => {
       <div className="container">
         <Header />
         <div className="results-header">
-          <span>Showing Poducts for </span>
+          <span>Showing Products for </span>
           <span className="category">"{category}"</span>
         </div>
 

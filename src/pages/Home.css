@@ -21,6 +21,15 @@
   object-fit: cover;
 }
 
+@media (min-width: 1981px){
+  .carousel-img {
+      min-width: 100vw;
+      height: auto;
+      object-fit: cover;
+    }
+}
+
+
 .card {
   width:450px;
   height:530px;
@@ -39,6 +48,8 @@
   width: 50%;
 }
 
+@media screen and (max-width:1980px){
+
 .cards {
   display: flex;
   justify-content: start;
@@ -50,7 +61,22 @@
   padding-right: 20px;
   width: 100vw;
   gap: 15px; 
+}
+}
 
+@media (min-width: 1981px) {
+  .cards {
+      display: flex;
+      justify-content: start;
+      flex-wrap: wrap;
+      position: absolute;
+      left: 0;
+      top: 450px;
+      padding-left: 350px;
+      padding-right: 20px;
+      width: 100vw;
+      gap: 15px;
+    }
 }
 
 .results-header {

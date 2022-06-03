@@ -13,10 +13,11 @@ import Adventure from "../images/adventure.png";
 import Dictionaries from "../images/dictionaries.png";
 import Fantasy from "../images/fantasy.png";
 import Horror from "../images/horror.png";
+import shoe from "../images/AngryShoe.jpg"
 
 const carousel = [Carousel1,Carousel2,Carousel3];
 const catCard = [Adventure, Fantasy,Horror,Dictionaries];
-const Home = () => {
+const Home = ({ product, selected, refProp }) => {
 
 return(
   <>
@@ -29,8 +30,8 @@ return(
     </Carousel>
     <div className="cards">  
       <Card className="card">
-        <h1>Browse Comics</h1>
-        <img src={Comics} alt="Comics Category" className="card-content"></img>
+        <h1>Browse Products</h1>
+        <img src={shoe} alt="product" height="350px" className="card-content"></img>
         <br />
         <Link to="/categories" state={"Comics"} className="link">
           Shop Now

@@ -10,6 +10,10 @@
   padding: 5px 25px;
 }
 
+.space_out{
+  padding-right: 15px;
+}
+
 .categories{
   color:white;
 }
@@ -19,6 +23,9 @@
   color: #adadad; 
 }
 
+.width{
+  width: 100px;
+}
 
 .logo {
   height: 40px;
